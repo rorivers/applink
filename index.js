@@ -4,7 +4,7 @@ var app = express();
 // app.use(express.static('public'));
 
 app.get('/.well-known/assetlinks.json', function(req, res){
-	var jsonStr = '[{"relation": ["delegate_permission/common.handle_all_urls"],"target": {"namespace": "android_app","package_name": "zblibrary.demo","sha256_cert_fingerprints":["EF:1B:7D:49:8B:AA:B7:A4:B4:85:92:4B:9D:4A:12:38:23:C2:09:13:89:F2:21:3E:3A:C3:E8:AB:8D:2B:7F:51"]}}]';
+	var jsonStr = '[{  "relation": ["delegate_permission/common.handle_all_urls"],  "target": {    "namespace": "android_app",    "package_name": "com.rongjing.zwdai",    "sha256_cert_fingerprints":    ["9F:C6:33:7A:C0:8C:80:DF:3B:F9:01:C8:57:C3:D0:FD:00:87:FD:A6:9D:F8:21:01:99:43:E8:14:DD:A1:D0:29"]  }}] ';
 
 	res.send(jsonStr);
 });
