@@ -7,8 +7,8 @@ app.get('/', function(req, res){
 	res.send('Hello World!');
 });
 
-app.get('/project/:id', function(req, res) {
-	var projId = req.params.id;
+app.get('/investmentdetails.html', function(req, res) {
+	var projId = req.query.projectid;
 	res.send('Project id is ' + projId);
 });
 
