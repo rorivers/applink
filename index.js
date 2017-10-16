@@ -7,7 +7,7 @@ var app = express();
 // app.use(express.static('public'));
 
 app.get('/.well-known/assetlinks.json', function(req, res){
-	fetch('http://172.16.16.12/.well-known/assetlinks.json')
+	fetch('http://39.108.234.236/.well-known/assetlinks.json')
 		.then(function(resp) {
 			return resp.json();
 		})
